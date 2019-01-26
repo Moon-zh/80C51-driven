@@ -1,0 +1,9 @@
+PUBLIC	HB		
+DE	SEGMENT CODE
+RSEG	DE	
+
+HB:    	MOV	30H,#5	
+	RET
+	END
+
+ds[1]=DBYTE[0x30];

@@ -1,0 +1,26 @@
+void	fs(uchar a)
+{
+	SBUF=a;
+	while(TI==0);
+	TI=0;	
+}
+
+uchar	ss()
+{
+	while(RI==0)
+	smxs();
+	RI=0;
+	return SBUF;
+}
+
+void	fscx(uchar code *cx)
+{
+	uint i;
+	i=0;
+	while(1)
+	{
+		if(cx[i]==0x30)return;
+		fs(cx[i]);
+		i++;
+	}	
+}

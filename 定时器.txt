@@ -1,0 +1,32 @@
+void	zd()		
+{
+ 	TMOD=0x11;
+	TH0=0;
+	TL0=0;
+	TR0=1;
+	ET0=1;
+	EA=1;
+}
+
+void	INT (void) interrupt 1 
+{
+	TR1=0
+	TH0=0;			
+	TL0=0;
+	TR1=1;
+}
+
+
+//Õ‚≤ø÷–∂œ
+void	zd()		
+{
+ 	EX0=1;
+	EA=1;
+	IT0=1;
+}
+
+void	INT (void) interrupt 0
+{
+	
+
+}
